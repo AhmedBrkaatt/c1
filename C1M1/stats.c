@@ -9,10 +9,10 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <C1M1> 
+ * @brief <first course assessment >
  *
- * <Add Extended Description Here>
+ * this code will calculate the max,min,mean,and median of a given array w
  *
  * @author <Ahmed Barakat>
  * @date <29/4/2023>
@@ -33,7 +33,7 @@ printf("minimum = %d \t maximum= %d\t mean=%d\t median=%9.6f\t",minimum,maximum,
  printf("\n");
 }
 
-unsigned char print_array(unsigned char a[],unsigned char size )
+unsigned char print_array(unsigned char a[],unsigned char size )// this function prints the content of the array without any sorting 
 {
   printf("given array --\n");
   for(int i=0;i<size;i++)
@@ -47,7 +47,7 @@ if (i==8-1||i==8*2-1||i==8*3-1||i==8*4-1||i==8*5-1)
   printf("\n");
 }
 
-float find_median(unsigned char a[],unsigned char size)
+float find_median(unsigned char a[],unsigned char size) //a function to find the median in the array
 {
   int i,j;
   for(i=0;i<size-1;i++)
@@ -61,7 +61,7 @@ a[j+1]=temp;
     }
   }
   
-printf("sorted array(ascending) = --------\n");
+printf("sorted array(ascending) = --------\n"); //sort the arry and print it 
 for(int k=0;k<SIZE;k++)
 {
     printf("%d\t",a[k]);
@@ -101,7 +101,7 @@ unsigned char find_max(unsigned char a[],unsigned char size){
 unsigned char max = a[location];
 return  max;
 }
-unsigned char find_mean(unsigned char a[],unsigned char size){
+unsigned char find_mean(unsigned char a[],unsigned char size){  // finding the mean value of all the elements in the array
  int long  c,sum;
   for(c=0;c<size;c++)
   {
@@ -125,7 +125,7 @@ a[j+1]=temp;
     }
   }
   
-printf("sorted array(descending) = --------\n");
+printf("sorted array(descending) = --------\n"); // prints the array in descending order
 for(int k=0;k<SIZE;k++)
 {
     printf("%d\t",a[k]);
@@ -150,7 +150,7 @@ void main() {
 unsigned int max,min,mean;
 float median;
   /* Statistics and Printing Functions Go Here */
-print_array(test,SIZE);
+print_array(test,SIZE); 
 min=find_min(test,SIZE);
 max = find_max(test,SIZE);
 mean= find_mean(test,SIZE);
