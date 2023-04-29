@@ -9,12 +9,12 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <C1M1> 
+ * @brief <simple statistics calculations on an array >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
+ * @author <Ahmed Barakat>
  * @date <Add date >
  *
  */
